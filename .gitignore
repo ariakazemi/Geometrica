@@ -4,6 +4,10 @@
 Temp/
 Library/
 
+/Library/
+/Temp/
+
+
 # ===================================== #
 # Visual Studio / MonoDevelop generated #
 # ===================================== #
