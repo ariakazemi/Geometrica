@@ -49,7 +49,9 @@
      <Compile Include="Assets\Standard Assets\Scripts\Camera Scripts\CameraPixelPerfect.cs" />
      <Compile Include="Assets\Standard Assets\Scripts\General Scripts\ActivateTrigger.cs" />
      <Compile Include="Assets\Standard Assets\Scripts\General Scripts\ChangeScene.cs" />
+     <Compile Include="Assets\Standard Assets\Scripts\General Scripts\cameraMove.cs" />
      <Compile Include="Assets\Standard Assets\Scripts\General Scripts\move.cs" />
+     <Compile Include="Assets\Standard Assets\Scripts\General Scripts\pointerMove.cs" />
      <None Include="Assets\Standard Assets (Mobile)\Shaders\Particle Shaders\Mobile Multiply Culled.shader" />
      <None Include="Assets\Standard Assets (Mobile)\Shaders\Miscellaneous Shaders\Mobile Background.shader" />
      <None Include="Assets\Standard Assets (Mobile)\Shaders\Vertex Colored Shaders\Mobile Transparent Vertex Color.shader" />

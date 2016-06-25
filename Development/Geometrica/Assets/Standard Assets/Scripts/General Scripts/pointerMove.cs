@@ -2,6 +2,7 @@
 using System.Collections;
 
 public class pointerMove : MonoBehaviour {
+	public float SpeedModifier = 1f;
 	private Rigidbody2D body2d;
 	Vector2 newPosition;
 	private float xVal,yVal,destance;
@@ -32,6 +33,6 @@ public class pointerMove : MonoBehaviour {
 		yVal = transform.position.y - newPosition.y;
 		//transform.position.x += xVal / destance;
 		//transform.position.y += yVal / destance;
-		body2d.velocity = v;
+		body2d.velocity = SpeedModifier * v;
 	}
 }
