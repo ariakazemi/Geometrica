@@ -17,6 +17,8 @@ public class pointerMove : MonoBehaviour {
 	{
 		if (Input.GetMouseButtonDown (0)) {
 			RaycastHit hit;
+			Vector2 restarter = new Vector2 (0, 0);
+			body2d.velocity = restarter ;
 			Ray ray = Camera.main.ScreenPointToRay (Input.mousePosition);
 			if (Physics.Raycast (ray, out hit)) {
 				newPosition = hit.point;
@@ -36,6 +38,7 @@ public class pointerMove : MonoBehaviour {
 			//body2d.AddRelativeForce (-10*force * slower);
 			body2d.AddForce (force * v);
 			//body2d.AddForce (force*v);
+
 		}
 		lastposition=transform.position;
 		//transform.position.x += xVal / destance;
