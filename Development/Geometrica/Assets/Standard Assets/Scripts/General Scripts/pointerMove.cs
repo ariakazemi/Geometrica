@@ -33,7 +33,7 @@ public class pointerMove : MonoBehaviour {
 			Vector2 slower;
 			slower.x= transform.position.x - lastposition.x;
 			slower.y= transform.position.y - lastposition.y;
-			body2d.AddRelativeForce (-10*force * slower);
+			//body2d.AddRelativeForce (-10*force * slower);
 			body2d.AddForce (force * v);
 			//body2d.AddForce (force*v);
 		}

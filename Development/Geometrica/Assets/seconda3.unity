@@ -326,9 +326,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a4d1c3a7efaf57b4592cf81e31ba5ebd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveRad: 0.5
-  cacheupSpeed: 1.2
-  slowDownSpeed: 0.8
+  moveRad: 15
+  cacheupSpeed: 1.1
+  slowDownSpeed: 0.9
 --- !u!1 &205132443
 GameObject:
   m_ObjectHideFlags: 0
@@ -418,7 +418,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!212 &205132446
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -739,7 +739,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 896509073}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 32.3, y: 0.9, z: 0}
+  m_LocalPosition: {x: 33.1, y: 0.9, z: 0}
   m_LocalScale: {x: 1.3849609, y: 1.3849609, z: 1.3849609}
   m_Children: []
   m_Father: {fileID: 1897869558}
@@ -995,15 +995,15 @@ Rigidbody2D:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 896509073}
   m_UseAutoMass: 0
-  m_Mass: 10
+  m_Mass: 3
   m_LinearDrag: 0
-  m_AngularDrag: 0.05
+  m_AngularDrag: 15
   m_GravityScale: 0
   m_IsKinematic: 0
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!212 &896509077
 SpriteRenderer:
   m_ObjectHideFlags: 0

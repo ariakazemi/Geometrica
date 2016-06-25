@@ -13,7 +13,7 @@ public class cameraMove : MonoBehaviour {
 
 	void Start () {
 		body2d = GetComponent<Rigidbody2D> ();
-		player = GameObject.Find ("Player").transform;
+		player = GameObject.Find ("Core").transform;
 		background = GameObject.Find ("Background").transform;
 		LastPlayerPos = player.position;
 		v=new Vector2(0,0);
@@ -46,9 +46,9 @@ public class cameraMove : MonoBehaviour {
 			camera.x += - ACC*(LastPlayerPos.x - NextPlayerpos.x);
 			camera.y += - ACC*(LastPlayerPos.y - NextPlayerpos.y);
 		}
-		if (background.position.x - camera.x > 4.35 || background.position.x - camera.x < -4.35 ){
-			camera.x=transform.position.x;
-		}
+		//if (background.position.x - camera.x > 4.35 || background.position.x - camera.x < -4.35 ){
+			//camera.x=transform.position.x;
+		//}
 		/*if (background.position.y - camera.y > 3.02 || background.position.y - camera.y < -3.02 ){
 			camera.y=transform.position.y;
 		}*/
