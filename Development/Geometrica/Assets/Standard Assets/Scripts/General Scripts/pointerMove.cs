@@ -1,8 +1,7 @@
-﻿using UnityEngine;
+using UnityEngine;
 using System.Collections;
 
 public class pointerMove : MonoBehaviour {
-	public float SpeedModifier = 1f;
 	private Rigidbody2D body2d;
 	Vector2 newPosition;
 	private float xVal,yVal,destance;
@@ -41,10 +40,6 @@ public class pointerMove : MonoBehaviour {
 		lastposition=transform.position;
 		//transform.position.x += xVal / destance;
 		//transform.position.y += yVal / destance;
-<<<<<<< HEAD
-		body2d.velocity = SpeedModifier * v;
-=======
 		//body2d.velocity = v;
->>>>>>> 75e2c00acd10785a6ac1c4efc7aa1c5d1b89c017
 	}
 }
