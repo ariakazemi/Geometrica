@@ -26,9 +26,10 @@ GameObject:
   m_Component:
   - 4: {fileID: 431600}
   - 60: {fileID: 6031600}
+  - 50: {fileID: 5087066}
   m_Layer: 0
   m_Name: DangerPoint
-  m_TagString: Untagged
+  m_TagString: Kill
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -42,6 +43,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 431602}
   - 60: {fileID: 6031602}
+  - 50: {fileID: 5039160}
   m_Layer: 0
   m_Name: DangerPoint
   m_TagString: Untagged
@@ -110,7 +112,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 159152}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -43.7999992, y: 2.0999999, z: 0}
+  m_LocalPosition: {x: -.200000003, y: -.5, z: 0}
   m_LocalScale: {x: .991533637, y: .991533637, z: .991533637}
   m_Children:
   - {fileID: 431598}
@@ -118,13 +120,43 @@ Transform:
   - {fileID: 431602}
   m_Father: {fileID: 0}
   m_RootOrder: 0
+--- !u!50 &5039160
+Rigidbody2D:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 131602}
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0
+  m_GravityScale: 0
+  m_FixedAngle: 1
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
 --- !u!50 &5086788
 Rigidbody2D:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 131598}
-  m_Mass: 9.99999975e-05
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0
+  m_GravityScale: 0
+  m_FixedAngle: 1
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+--- !u!50 &5087066
+Rigidbody2D:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 131600}
+  m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0
   m_GravityScale: 0
