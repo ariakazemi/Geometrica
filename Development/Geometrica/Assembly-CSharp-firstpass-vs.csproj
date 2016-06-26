@@ -52,6 +52,7 @@
      <Compile Include="Assets\Standard Assets\Scripts\General Scripts\cameraMove.cs" />
      <Compile Include="Assets\Standard Assets\Scripts\General Scripts\move.cs" />
      <Compile Include="Assets\Standard Assets\Scripts\General Scripts\pointerMove.cs" />
+     <Compile Include="Assets\Standard Assets\Scripts\player\boundryBlast.cs" />
      <None Include="Assets\Standard Assets (Mobile)\Shaders\Particle Shaders\Mobile Multiply Culled.shader" />
      <None Include="Assets\Standard Assets (Mobile)\Shaders\Miscellaneous Shaders\Mobile Background.shader" />
      <None Include="Assets\Standard Assets (Mobile)\Shaders\Vertex Colored Shaders\Mobile Transparent Vertex Color.shader" />
