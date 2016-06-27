@@ -3,22 +3,29 @@ using System.Collections;
 
 public class boundryBlast : MonoBehaviour {
 	private GameObject player;
+	private GameObject Core;
+	public ParticleSystem particle;
 	// Use this for initialization
 	void Start () {
 		player = GameObject.Find ("Boundry");
+		Core = GameObject.Find ("Core");
+		particle = Core.GetComponent<ParticleSystem>();
 	}
+
+
 	void Update () {
 	}
 
 	void OnCollisionEnter2D (Collision2D col)
 	{
-		print (col.gameObject.name);
+		
 
 
 		if( col.gameObject.name == "DangerPoint")
 		{
-			print ("gave");
+			
 			Destroy (player);
+			particle.Play();
 		}
 	}
 }
