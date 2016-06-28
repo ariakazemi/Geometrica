@@ -13,7 +13,7 @@ public class cameraMove : MonoBehaviour {
 
 	void Start () {
 		body2d = GetComponent<Rigidbody2D> ();
-		player = GameObject.Find ("Core").transform;
+		player = GameObject.FindGameObjectWithTag("MainPlayer").transform;
 		background = GameObject.Find ("Background").transform;
 		LastPlayerPos = player.position;
 		v=new Vector2(0,0);

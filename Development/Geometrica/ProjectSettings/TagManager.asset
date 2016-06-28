@@ -8,6 +8,8 @@ TagManager:
   - CircleBoundry
   - Destroy
   - ActiveBoundry
+  - CircleBoundry
+  - MainPlayer
   layers:
   - Default
   - TransparentFX
