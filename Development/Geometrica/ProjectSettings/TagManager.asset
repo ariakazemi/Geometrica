@@ -48,7 +48,7 @@ TagManager:
   - name: background
     userID: 1
     uniqueID: 3440499657
-    locked: 0
+    locked: 1
   - name: forground
     userID: 2
     uniqueID: 2731387341
