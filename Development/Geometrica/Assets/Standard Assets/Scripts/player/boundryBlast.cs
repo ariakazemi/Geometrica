@@ -3,6 +3,7 @@ using System.Collections;
 
 public class boundryBlast : MonoBehaviour {
 	//private GameObject player;
+
 	private GameObject Core;
 	public ParticleSystem particle;
 	// Use this for initialization
@@ -26,6 +27,8 @@ public class boundryBlast : MonoBehaviour {
 			
 			Destroy (gameObject);
 			particle.Play();
+			Core.GetComponent<Rigidbody2D> ().mass =Core.GetComponent<Rigidbody2D> ().mass/ Core.GetComponent<GetBoundry>().lonlySoul;
+			Core.GetComponent<pointerMove> ().force = Core.GetComponent<pointerMove> ().force / Core.GetComponent<GetBoundry> ().lonlySoul;
 		}
 	}
 }
