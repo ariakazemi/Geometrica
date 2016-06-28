@@ -4,8 +4,9 @@
 TagManager:
   tags:
   - Kill
-  - 
+  - Circle Boundry
   - Destroy
+  - ActiveBoundry
   - 
   Builtin Layer 0: Default
   Builtin Layer 1: TransparentFX
