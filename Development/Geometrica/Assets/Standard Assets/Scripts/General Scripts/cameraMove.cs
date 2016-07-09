@@ -17,7 +17,8 @@ public class cameraMove : MonoBehaviour {
 		background = GameObject.Find ("Background").transform;
 		LastPlayerPos = player.position;
 		v=new Vector2(0,0);
-	
+		print (player.name);
+		print (player.tag);
 	}
 
 
@@ -43,6 +44,9 @@ public class cameraMove : MonoBehaviour {
 			ACC = cacheupSpeed;
 		
 		if (NextPlayerpos.x - transform.position.x >moveRad || NextPlayerpos.x - transform.position.x < -moveRad || NextPlayerpos.y - transform.position.y > moveRad || NextPlayerpos.y - transform.position.y < -moveRad) {
+			print ("camdif" + (ACC*(LastPlayerPos.x - NextPlayerpos.x)).ToString());
+			print ("dif" + (LastPlayerPos.x - NextPlayerpos.x).ToString());
+			print ("x pos" + LastPlayerPos.x.ToString());
 			camera.x += - ACC*(LastPlayerPos.x - NextPlayerpos.x);
 			camera.y += - ACC*(LastPlayerPos.y - NextPlayerpos.y);
 		}
@@ -54,6 +58,7 @@ public class cameraMove : MonoBehaviour {
 		}*/
 		//print (Screen.width);
 		transform.position = camera;
+
 
 		LastPlayerPos = player.position;
 	}

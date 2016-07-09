@@ -85,7 +85,7 @@ GameObject:
   - 4: {fileID: 25374173}
   - 212: {fileID: 25374172}
   m_Layer: 0
-  m_Name: Core
+  m_Name: SquareCore
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -305,6 +305,7 @@ GameObject:
   - 81: {fileID: 157282359}
   - 114: {fileID: 157282364}
   - 95: {fileID: 157282365}
+  - 114: {fileID: 157282366}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -353,7 +354,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 7.9000001
+  orthographic size: 6.61382198
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -372,7 +373,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 157282358}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -734.099976, y: 13.1000004, z: -150}
+  m_LocalPosition: {x: -736.900024, y: 13.1000004, z: -150}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -406,6 +407,18 @@ Animator:
   m_ApplyRootMotion: 1
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
+--- !u!114 &157282366
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 157282358}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f8d43b6e76cb214ebf2f03724cb00d9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  force: 200
 --- !u!1 &205132443
 GameObject:
   m_ObjectHideFlags: 0
@@ -435,7 +448,7 @@ PolygonCollider2D:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 205132443}
   m_Enabled: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: 5d5b473eb39f346f98dd3b2454e55dfa, type: 2}
   m_IsTrigger: 0
   m_Poly:
     m_Paths:
@@ -458,7 +471,7 @@ Rigidbody2D:
   m_Mass: 6
   m_LinearDrag: 0
   m_AngularDrag: .0500000007
-  m_GravityScale: 0
+  m_GravityScale: .100000001
   m_FixedAngle: 0
   m_IsKinematic: 0
   m_Interpolate: 0
@@ -509,7 +522,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f8d43b6e76cb214ebf2f03724cb00d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  force: 1200
+  force: 1500
 --- !u!199 &205132449
 ParticleSystemRenderer:
   m_ObjectHideFlags: 0
@@ -559,7 +572,7 @@ ParticleSystem:
   InitialModule:
     enabled: 1
     startLifetime:
-      scalar: 1.64999998
+      scalar: 1.59000003
       maxCurve:
         serializedVersion: 2
         m_Curve:
@@ -592,7 +605,7 @@ ParticleSystem:
         m_PostInfinity: 2
       minMaxState: 0
     startSpeed:
-      scalar: -4.59000015
+      scalar: -3.1099999
       maxCurve:
         serializedVersion: 2
         m_Curve:
@@ -719,7 +732,7 @@ ParticleSystem:
         rgba: 4294967295
       minMaxState: 0
     startSize:
-      scalar: .209999993
+      scalar: .0900000036
       maxCurve:
         serializedVersion: 2
         m_Curve:
@@ -888,7 +901,7 @@ ParticleSystem:
   RotationModule:
     enabled: 0
     curve:
-      scalar: .785398185
+      scalar: .785398126
       maxCurve:
         serializedVersion: 2
         m_Curve:
@@ -1403,18 +1416,13 @@ ParticleSystem:
     inWorldSpace: 0
     dampen: 1
   SizeBySpeedModule:
-    enabled: 0
+    enabled: 1
     curve:
-      scalar: 1
+      scalar: 1.73000002
       maxCurve:
         serializedVersion: 2
         m_Curve:
         - time: 0
-          value: 1
-          inSlope: 0
-          outSlope: 0
-          tangentMode: 0
-        - time: 1
           value: 1
           inSlope: 0
           outSlope: 0
@@ -1425,23 +1433,18 @@ ParticleSystem:
         serializedVersion: 2
         m_Curve:
         - time: 0
-          value: 0
-          inSlope: 0
-          outSlope: 0
-          tangentMode: 0
-        - time: 1
-          value: 0
+          value: .433526009
           inSlope: 0
           outSlope: 0
           tangentMode: 0
         m_PreInfinity: 2
         m_PostInfinity: 2
-      minMaxState: 1
+      minMaxState: 3
     range: {x: 0, y: 1}
   RotationBySpeedModule:
     enabled: 0
     curve:
-      scalar: .785398185
+      scalar: .785398126
       maxCurve:
         serializedVersion: 2
         m_Curve:
@@ -2712,7 +2715,7 @@ SpriteRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 682093188}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_LightmapIndex: 255
@@ -3192,7 +3195,7 @@ Rigidbody2D:
   m_LinearDrag: 0
   m_AngularDrag: .0500000007
   m_GravityScale: 0
-  m_FixedAngle: 0
+  m_FixedAngle: 1
   m_IsKinematic: 0
   m_Interpolate: 0
   m_SleepingMode: 1
